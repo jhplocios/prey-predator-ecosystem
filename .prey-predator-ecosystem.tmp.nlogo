@@ -110,10 +110,10 @@ to sheep-hunger-state
 end
 
 to wolf-hunger-state
-  if energy < 4 [
+  if energy <  [
     set color red
   ]
-  if energy > 2 [
+  if energy > 1 [
     set color brown
   ]
 end
