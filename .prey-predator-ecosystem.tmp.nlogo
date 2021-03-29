@@ -110,10 +110,10 @@ to sheep-hunger-state
 end
 
 to wolf-hunger-state
-  if energy <  [
+  if energy < 4 [
     set color red
   ]
-  if energy > 1 [
+  if energy > 2 [
     set color brown
   ]
 end
@@ -354,39 +354,35 @@ HORIZONTAL
 @#$#@#$#@
 ## WHAT IS IT?
 
-(a general understanding of what the model is trying to show or explain)
+This model investigates a basic predator-prey ecosystem with various variables such as grass growth rate, sheep and wolf reproduction rate, and how these can influence the ecosystem's balance.
 
 ## HOW IT WORKS
 
-(what rules the agents use to create the overall behavior of the model)
+Sheep, grass, and wolves make up the ecosystem. The sheep wander about aimlessly and must eat grass to remain energized - If the sheep accumulates enough energy, it will reproduce; if they run out of energy, they will die. When grass is eaten, it can regrow after a certain period. Around the same time, the wolf behaves similarly to the sheep, except that instead of eating grass, it eats the sheep. The growth rate of grass, sheep, and wolves can be modified to grow at different rates. The model can be used to investigate these variables' competitive advantages.
 
 ## HOW TO USE IT
 
-(how to use the model, including a description of each of the items in the Interface tab)
+To configure the sheep, grass, and wolves, click the SETUP button. To begin the simulation, click the GO button. The GRASS-GROWTH-RATE slider determines how quickly the grass grows. The INITIAL-SHEEP-COUNT and INITIAL-WOLF-COUNT sliders control the number of sheep and wolves at the start. The SHEEP-MULTIPLY-RATE and WOLF-MULTIPLY-RATE sliders control how quickly sheep and wolves reproduce. The INITIAL-SHEEP-ENERGY and INITIAL-WOLF-ENERGY slider control the initial energy of sheep and wolves, respectively.
 
 ## THINGS TO NOTICE
 
-(suggested things for the user to notice while running the model)
+Keep an eye on the TOTAL SHEEP and TOTAL WOLVES plots to see how the population evolves. Initially, there aren't enough sheep for the wolves, and many of them die. However, this helps the sheep to grow more freely, offering plenty of food for the remaining wolves. The wolves replenish their energy reserves and reproduce. The proliferation of wolves causes a scarcity of sheep, and the cycle repeats itself.
 
 ## THINGS TO TRY
 
-(suggested things for the user to try to do (move sliders, switches, etc.) with the model)
+The sheep population oscillates under the current conditions. Can adjusting the parameters result in a different cycle? Or maybe an erratic oscillation?
 
 ## EXTENDING THE MODEL
 
-(suggested things to add or change in the Code tab to make the model more complicated, detailed, accurate, etc.)
-
-## NETLOGO FEATURES
-
-(interesting or unusual features of NetLogo that the model uses, particularly in the Code tab; or where workarounds were needed for missing features)
+There are many ways to adapt the model so that it affects the ecosystem's cycle. You may be able to modify the reproduction rules or how energy is added or deducted.
 
 ## RELATED MODELS
 
-(models in the NetLogo Models Library and elsewhere which are of related interest)
+Another interacting environment with different rules is Wolf Sheep Predation and Rabbits Grass Weeds.
 
 ## CREDITS AND REFERENCES
 
-(a reference to the model's URL on the web if it has one, as well as any other necessary credits, citations, and links)
+)
 @#$#@#$#@
 default
 true
